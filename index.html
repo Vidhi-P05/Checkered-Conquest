@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkered Conquest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-area">
+            <h1 class="title">⚔️ Checkered Conquest ⚔️</h1>
+            
+            <div class="turn-indicator" id="turnIndicator">
+                Welcome to Checkered Conquest!
+            </div>
+            
+            <div class="game-status" id="gameStatus"></div>
+            
+            <div class="chessboard" id="chessboard"></div>
+        </div>
+        
+        <div class="sidebar">
+            <div class="scoreboard">
+                <h3>🏆 Captured Pieces 🏆</h3>
+                
+                <div class="captures">
+                    <h4 id="whitePlayerCaptures">White Captures:</h4>
+                    <div class="captured-pieces" id="whiteCaptured"></div>
+                </div>
+                
+                <div class="captures">
+                    <h4 id="blackPlayerCaptures">Black Captures:</h4>
+                    <div class="captured-pieces" id="blackCaptured"></div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <h3>⚙️ Game Controls ⚙️</h3>
+                <button class="btn" id="newGameBtn">New Game</button>
+                <button class="btn" id="undoBtn" disabled>Undo Move</button>
+                <button class="btn" id="offerDrawBtn">Offer Draw</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Player Names Modal -->
+    <div id="playerNamesModal" class="modal">
+        <div class="modal-content">
+            <h2>👑 Welcome to Checkered Conquest 👑</h2>
+            <p>Enter player names to begin your royal battle!</p>
+            <input type="text" id="whitePlayerName" placeholder="White Player Name" maxlength="20">
+            <input type="text" id="blackPlayerName" placeholder="Black Player Name" maxlength="20">
+            <button class="btn" id="startGameBtn">Begin Battle!</button>
+        </div>
+    </div>
+    
+    <!-- Pawn Promotion Modal -->
+    <div id="promotionModal" class="modal">
+        <div class="modal-content">
+            <h2>👑 Pawn Promotion 👑</h2>
+            <p>Choose your piece:</p>
+            <div class="promotion-options" id="promotionOptions"></div>
+        </div>
+    </div>
+    
+    <!-- Game Over Modal -->
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <h2 id="gameOverTitle">Game Over</h2>
+            <p id="gameOverMessage"></p>
+            <button class="btn" id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+    
+    <!-- Draw Offer Modal -->
+    <div id="drawOfferModal" class="modal">
+        <div class="modal-content">
+            <h2>🤝 Draw Offer 🤝</h2>
+            <p id="drawOfferMessage"></p>
+            <button class="btn" id="acceptDrawBtn">Accept Draw</button>
+            <button class="btn" id="declineDrawBtn">Decline Draw</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+                
