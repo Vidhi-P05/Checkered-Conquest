@@ -11,7 +11,7 @@ Whether you're a seasoned strategist or a casual player, Checkered Conquest invi
 ## 🔗 Live Demo
 
 Play the game here:  
-👉 **[Checkered Conquest – Play Now]()**
+👉 **[Checkered Conquest – Play Now](https://vidhi-p05.github.io/Checkered-Conquest/)**
 
 
 ## 🕹️ Features
