@@ -88,7 +88,7 @@ To play the game locally:
 
 ## ✍️ Author
 
-**Your Name**  
+**Vidhi N. Pateliya**  
 [GitHub](https://github.com/Vidhi-P05)  
 [LinkedIn](https://linkedin.com/in/vidhi-pateliya)  
 Email: vid23pateliya@gmail.com
